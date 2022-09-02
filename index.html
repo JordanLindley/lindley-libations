@@ -6,39 +6,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 
-  <title>Lindley Libations - Home</title>
+  <title>Libate: Home</title>
   <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
 <body>
-
+<!-- header flexbox conatiner is 'header' -->
   <div class="header">
-    <div class="left">
+<!-- this is the topmost bar -->
+    <div class="title">
       <div class="logo">
-        Lindley Libations
+        LIBATE
       </div>
-    </div>
-
-    <div class="right">
+<!-- navigation links on the top right of the page -->
       <ul class="navigation">
-        <li><a>how it works</a></li>
-        <li><a>who we are</a></li>
-        <li><a>shop</a></li>
-        <li><a>log in</a></li>
+        <li><a href="#">how it works</a></li>
+        <li><a href="#">who we are</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">log in</a></li>
       </ul>
     </div>
-
+<!-- Part of the header, sign-up button with a promotional image -->
     <div class="sub-header">
       <div class="sub-header-left">
         <h1>Let's have a drink.</h1>
-        <p>Cockatil connoisseur or just a fan of the classics, we can set you up with the everything you need to curate your home bar, shipped right to your door. Why wait when you could be sipping on a delicious cocktail this time tomorrow?</p>
-        <button class="header-sign-up">Get started today</button>
+        <p class="tag-text">Cockatil connoisseur or just a fan of the classics, we can set you up with the everything you need to curate your home bar, shipped right to your door. Why wait when you could be sipping on a delicious cocktail this time tomorrow?</p>
+        <a href="#">
+          <button class="header-sign-up">Get started today</button>
+        </a>
       </div>
       <div class="sub-header-right">
-        <img src="" alt="">
+        <img class="negroni" src="./img/negroni.jpg" alt="A tall glass filled with a negroni, with a sprig of rosemary as a garnish and an orange on the table next to the drink.">
       </div>
     </div>
 
   </div>
+<!-- beginning of card section -->
+  <div class="content">
+    <div class="content-tagline">What's your poison?</div>
+    <div class="card-container">
+<!-- individual cards as links to filtered shop page -->
+      <div class="card">
+        <img class="card-img" src="./img/booze.jpg" alt="Three glasses full of spirits and ice on a wooden table.">
+        <div class="card-text">The good stuff</div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="./img/tools.jpg" alt="a drink about to be poured from a shaker, through a strainer, into a glass with one large ice cube in it.">
+        <div class="card-text">Tools</div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="./img/glassware.jpg" alt="A dark brown colored drink being poured from a metal shaker into a stemmed cocktail glass">
+        <div class="card-text">Glassware</div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="./img/syrups-access.jpg" alt="Four cocktails in varying glassware of different vibrant colors">
+        <div class="card-text">Accessories</div>
+      </div>
+    </div>
+<!-- quote section, customer testimonial -->
+    <div class="testimonial">
+      <div class="quote"><em>I used to have to run to three different liquor stores every month to find the ingredients I needed for my home bar. Lindley Libations just made my life SO much easier!</em></div>
+      <p class="quote-name">Cameron Sullivan, Libate customer</p>
+    </div>
+<!-- call to action with sign up button and monetary promotion -->
+    <div class="action-container">
+      <div class="action-left">Open a tab. Get started today.
+        <div class="action-sub">Complete our customer survey to get your cocktail ID and get 10% off your first box!</div>
+      </div>
+      <div class="action-right"><a href="#"><button class="action-sign-up">Sign up</button></a></div>
+    </div>
+  </div>
+<!-- footer, centered at bottom of the page -->
+  <div class="footer">Copyright © Libate 2022</div> 
   
 </body>
 </html>
