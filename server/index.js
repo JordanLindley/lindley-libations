@@ -8,6 +8,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
+app.use('/', express.static('client'));
+
 app.post('/subscriptions', (request, response) => {
   console.log(request.body);
   response.send(fs.readFileSync('package.json'));
@@ -15,5 +17,5 @@ app.post('/subscriptions', (request, response) => {
 })
 
 app.listen(8080, () => {
-  console.log('But Anakin, the ray shield is still up!');
+  console.log('Running...');
 })

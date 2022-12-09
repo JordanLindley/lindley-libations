@@ -31,8 +31,18 @@
       <div class="sub-header-left">
         <h1>Let's have a drink.</h1>
         <p class="tag-text">Cockatil connoisseur or just a fan of the classics, we can set you up with the everything you need to curate your home bar, shipped right to your door. Why wait when you could be sipping on a delicious cocktail this time tomorrow?</p>
+        <!-- change to handle in ja -->
+        <form method="post" target="_blank" action="http://localhost:8080/subscriptions">
+          <div class="form">
+            <label for="name">What's your name?</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email-address">What's your email address?</label>
+            <input type="email" name="emailAddress" id="emailAddress" required>
+            <input type="submit" value="Get Started!">
+          </div>
+        </form>
         <a href="#">
-          <button class="header-sign-up">Get started today</button>
+          <button class="btn header-sign-up">Get started today</button>
         </a>
       </div>
       <div class="sub-header-right">
@@ -76,7 +86,7 @@
       <div class="action-left">Open a tab. Get started today.
         <div class="action-sub">Complete our customer survey to get your cocktail ID and get 10% off your first box!</div>
       </div>
-      <div class="action-right"><a href="#"><button class="action-sign-up">Sign up</button></a></div>
+      <div class="action-right"><a href="#"><button class="btn action-sign-up">Sign up</button></a></div>
     </div>
   </div>
 <!-- footer, centered at bottom of the page -->
